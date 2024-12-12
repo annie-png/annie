@@ -1,0 +1,12 @@
+
+
+@font-face{
+	font-family: "Eco Surf";
+	src: url("Quantum.otf") format("otf");
+}
+
+body{
+	background: yellow;
+	font-family: 'Eco Surf';
+	font-size: 100px;
+}
