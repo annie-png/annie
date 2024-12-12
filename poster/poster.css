@@ -1,0 +1,66 @@
+body{
+	background: #098cc4;
+	font-family: Helvetica, sans-serif;
+}
+
+.square{
+	width: 155px;
+	height: 300px;
+	background: rgba(255, 255, 0, 0);
+	float: left;
+	margin: 10px;
+	mix-blend-mode: multiply;
+}
+
+
+#yellowsq, #bluesq{
+	background: #fffbe400;
+	overflow: auto;
+}
+
+#bluesq .square{
+	background: rgba(0, 0, 255, 0);
+	width: 300px;
+	height: 300px;
+}
+
+#bluesq{
+	margin-top: -100px;
+	margin-left: 300px;
+}
+
+
+#text{
+	
+}
+
+.left, .right{
+	flex: 1;
+}
+
+.left{
+	text-align: left;
+	margin-left: 11rem;
+}
+
+h1{
+	margin-bottom: 1rem;
+}
+
+h1,h2{
+	font-size: 6rem;
+	color: white;
+}
+
+h2{
+	margin: 0;
+}
+
+p{
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#poster{
+	
+}
