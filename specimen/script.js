@@ -41,6 +41,7 @@ function randomizeText() {
     -2px -2px #00ff00,
     1px -1px #0000ff
   `;
+  
 
   // Apply random animation class
   const animations = ["bounce", "fade", "zoom", "spin", "shake", "pulse", "ripple"];
