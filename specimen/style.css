@@ -1,0 +1,195 @@
+@font-face{
+	font-family: 'Quantum';
+	src: url('Quantum.woff2') format('woff2'),
+         url('Quantum.woff') format('woff'),
+         url('Quantum.otf') format('opentype');
+}
+
+@media (max-width: 768px) {
+	.container {
+	  padding: 10px; /* Smaller padding for smaller screens */
+	}
+	.quantum {
+	  font-size: 6rem; /* Adjust text size for better fit */
+	}
+  }
+
+body {
+	font-family: instrument-serif-regular, serif;
+	background-color: #000000;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+  }
+  
+  .container {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+	padding: 20px; /* Adds space inside the container */
+	max-width: 90em; /* Prevents text from touching screen edges */
+	width: 100%; /* Makes it stretch to the viewport width */
+  	text-align: center; /* Ensures all lines are centered */
+	word-wrap: break-word; /* Breaks long words */
+  }
+  
+  .quantum {
+	font-family: 'Quantum', sans-serif;
+	font-size: 6rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+	line-height: 1.5;
+	margin: 0 auto; /* Centers the text block itself */
+  	text-align: center; /* Centers multiple lines */
+  	max-width: 100%; /* Prevents the text from overflowing */
+  	white-space: normal; /* Ensures text wraps properly */
+	overflow-wrap: break-word; /* Breaks long words */
+  }
+  
+  button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-family: 'Instrument Serif', serif;
+	font-size: 1rem;
+	background: none; /* Removes the background */
+  	color: rgb(255, 255, 255); /* Text color */
+  	border: none; /* Removes the border */
+  	cursor: pointer;
+  	transition: color 0.3s ease;
+	position: absolute; /* Fixes the button's position */
+	bottom: 200px; /* Position it 20px from the bottom */
+	left: 50%; /* Center horizontally */
+	transform: translateX(-50%); /* Adjust to center the button properly */ 
+  }
+  
+  button:hover {
+	background: none; /* Ensures no background on hover */
+	font-style: italic; /* Apply italic on hover */
+
+  }
+
+  @keyframes bounce {
+	0%, 100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-10px);
+	}
+  }
+  
+  @keyframes fade {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes zoom {
+	0% {
+	  transform: scale(0.8);
+	  opacity: 0;
+	}
+	50% {
+	  transform: scale(1.2);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  
+  
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  animation-timing-function: ease-in;
+	}
+	50% {
+	  transform: rotate(180deg);
+	  animation-timing-function: linear;
+	}
+	100% {
+	  transform: rotate(360deg);
+	  animation-timing-function: ease-out;
+	}
+  }
+
+  @keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+  @keyframes shake {
+	0%, 100% {
+	  transform: translateX(0);
+	}
+	25% {
+	  transform: translateX(-5px);
+	}
+	50% {
+	  transform: translateX(5px);
+	}
+	75% {
+	  transform: translateX(-5px);
+	}
+  }
+
+  @keyframes ripple {
+	0% {
+	  text-shadow: 0 0 0 transparent;
+	}
+	50% {
+	  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+	}
+	100% {
+	  text-shadow: 0 0 0 transparent;
+	}
+  }
+  
+  .ripple {
+	animation: ripple 1s ease-in-out infinite;
+  }  
+  
+  .shake {
+	animation: shake 0.5s ease-in-out;
+  }  
+  
+  .pulse {
+	animation: pulse 1s ease-in-out infinite;
+  }  
+  
+  .spin {
+	animation: spin 2s cubic-bezier(0.3, 0, 0.3, 1) infinite; /* Smooth ease-in-out */
+  }  
+  
+  .bounce {
+	animation: bounce 0.5s ease-in-out;
+  }
+  
+  .fade {
+	animation: fade 0.5s ease-in-out;
+  }
+  
+  .zoom {
+	animation: zoom 0.7s ease-in-out;
+  }
+  
+  .spin {
+	animation: spin 0.5s linear;
+  }
+  
+  

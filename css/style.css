@@ -1,12 +1,31 @@
-
-
-@font-face{
-	font-family: "Quantum";
-	src: url("Quantum.otf") format("otf");
-}
-
-body{
+body {
 	background: white;
-	font-family: 'Quantum';
-	font-size: 100px;
-}
+	font-family: 'Instrument Serif', serif; /* Use quotes around the font name */
+	margin-left: 3rem;
+	
+  }
+  
+  h1 {
+	font-family: 'Instrument Serif', serif; /* Apply to h1 */
+	font-size: 6rem;
+	font-weight: normal;
+	color: rgb(0, 0, 0);
+  }
+
+  a {
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px; /* Optional: Adds space between the links */
+	color: rgb(153, 0, 255);
+	font-size: 3rem;
+  }
+  
+  a:hover {
+	color: #ff0000; /* Change color when hovered */
+	font-style: italic;
+  }
+
+  h1:hover {
+	font-style: italic;
+  }
+  
