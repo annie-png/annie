@@ -1,11 +1,11 @@
 body{
-	background: #098cc4;
+	background: #808468;
 	font-family: Helvetica, sans-serif;
 }
 
 .square{
-	width: 155px;
-	height: 300px;
+	width: 500px;
+	height: 100px;
 	background: rgba(255, 255, 0, 0);
 	float: left;
 	margin: 10px;
@@ -13,20 +13,15 @@ body{
 }
 
 
-#yellowsq, #bluesq{
-	background: #fffbe400;
+#yellowsq {
+	background: #fffbe4;
 	overflow: auto;
 }
 
-#bluesq .square{
-	background: rgba(0, 0, 255, 0);
-	width: 300px;
-	height: 300px;
-}
-
-#bluesq{
-	margin-top: -100px;
-	margin-left: 300px;
+#yellowsq{
+	width: 70rem;
+	height: 50rem;
+	margin-bottom: 10rem;
 }
 
 
@@ -38,27 +33,34 @@ body{
 	flex: 1;
 }
 
-.left{
-	text-align: left;
-	margin-left: 11rem;
-}
 
 h1{
-	margin-bottom: 1rem;
+	color: white;
+	margin-bottom: -.5rem;
 }
 
 h1,h2{
-	font-size: 6rem;
-	color: white;
+	font-size: 10rem;
+	margin-left: 10rem;
+	line-height: 10rem;
+	letter-spacing: -.5rem;
 }
 
 h2{
-	margin: 0;
+	margin-left: 10rem;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	color: rgb(255, 149, 0);
+	line-height: 9rem;
 }
 
 p{
 	font-family: Helvetica, sans-serif;
-	font-weight: bold;
+	font-weight: normal;
+	font-size: 25px;
+	margin-left: 10rem;
+	margin-bottom: 10px;
+	color: #808468;
 }
 
 #poster{
