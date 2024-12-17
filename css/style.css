@@ -12,6 +12,10 @@ body {
 	color: rgb(0, 0, 0);
   }
 
+  span {
+	text-decoration: underline;
+  }
+
   a {
 	text-decoration: none;
 	display: block;
@@ -28,4 +32,25 @@ body {
   h1:hover {
 	font-style: italic;
   }
+
+  body.darkmode .light {
+	text-decoration: none; /* Remove underline in dark mode */
+  }
   
+  body.darkmode .dark {
+	text-decoration: underline; /* Add underline to "Dark" in dark mode */
+  }
+  
+  .darkmode{
+    background: black;
+    color: white;
+    --grad: -100;
+}
+
+.darkmode h1{
+    color: rgb(255, 255, 255);
+}
+
+.darkmode a{
+	color: greenyellow;
+}
